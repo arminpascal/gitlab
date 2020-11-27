@@ -9,7 +9,7 @@ public class OceanHelper {
         int[] xStencil = new int[]{-1, 0, 1, -1, 0, 1, -1, 0, 1};
         int[] yStencil = new int[]{-1, -1, -1, 0, 0, 0, 1, 1, 1};
 
-        // using loop to find all valid neighour cells to continue deep search in all these directions
+        // using a loop to find all valid neighbour cells to continue deep search in all these directions
         for (int i = 0; i < xStencil.length; i++) {
             int xNext = xCurrent + xStencil[i];
             int yNext = yCurrent + yStencil[i];
